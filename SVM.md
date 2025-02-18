@@ -53,9 +53,15 @@ Regulation term $C\sum_{i = 1}^{N} \epsilon_i$
 
 Reflection $\phi(X)$ from low to high dimension
 
-minimize: $ \frac{1}{2}||W||^2  + C\sum_{i = 1}^{N} \epsilon_i$
+minimize: 
 
-subject to $ y_i[W^T\phi(X) + b] \ge 1 - \epsilon_i$
+$ \frac{1}{2}||W||^2  + C\sum_{i = 1}^{N} \epsilon_i$
+
+subject to 
+
+$ y_i[W^T\phi(X) + b] \ge 1 - \epsilon_i$
+
+$\epsilon_i \ge 0$
 
 $P(Linear Separable) -> 1,  dimension -> +\infty$
 
@@ -87,3 +93,17 @@ if $w^* \ $ is the solution of the Prime problem, and $\alpha^* $ and $\beta ^ *
 Then
 
 $\theta(\alpha^*, \beta^*) \le f(w^*)$ 
+
+define $G = f(w^*) - \theta(\alpha^*, \beta^*) \ge 0$ as Dual Gap
+
+It has been proven that for some specific optimization problem, G = 0
+
+
+#### Strong Duality Theorem
+if $f(w)$ is a convex function , and $g(w) = Aw + b$ and $h(w) = cw + d$
+then G = 0
+
+in this situation, for every $i$, either $\alpha^*_i =0 $ or $g^*_i(w^*) = 0$
+(KKT condition)
+
+#### apply dual problem to SVM
