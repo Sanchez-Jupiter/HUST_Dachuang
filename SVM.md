@@ -78,5 +78,12 @@ $h_i(w)=0$
 #### Dual problem
 maximize $\ \theta(\alpha, \beta) = inf_{all \ w}{L(w, \alpha, \beta)}$
 
+subject to $ \alpha \ge 0  \ (each \ \alpha \ge 0)$ 
+
 $L(w, \alpha, \beta) = f(w) + \alpha^Tg(w) + \beta^Th(w)$
 
+#### law
+if $w^* \ $ is the solution of the Prime problem, and $\alpha^* $ and $\beta ^ *$ are the solution of the dual problem.
+Then
+
+$\theta(\alpha^*, \beta^*) \le f(w^*)$ 
