@@ -107,3 +107,9 @@ in this situation, for every $i$, either $\alpha^*_i =0 $ or $g^*_i(w^*) = 0$
 (KKT condition)
 
 #### apply dual problem to SVM
+
+
+
+
+#### ？
+为什么一定能找到一个$0 < \alpha < C$
