@@ -113,3 +113,10 @@ in this situation, for every $i$, either $\alpha^*_i =0 $ or $g^*_i(w^*) = 0$
 
 #### ？
 为什么一定能找到一个$0 < \alpha < C$
+
+
+#### 处理多类问题
+* 改造
+* 一类对其它类
+* 一类对另一类（投票）
+* 树状机构
